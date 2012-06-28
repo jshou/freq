@@ -1,10 +1,14 @@
 # freq
 
-FIXME: write description
+calculates frequency of words from STDIN
 
 ## Usage
 
-FIXME: write
+use `lein uberjar` to create a jar, run it like this:
+
+```
+cat SOMEFILE | java -jar freq.jar
+```
 
 ## License
 
