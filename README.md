@@ -12,6 +12,6 @@ cat SOMEFILE | java -jar freq.jar
 
 ## License
 
-Copyright (C) 2012 FIXME
+Copyright (C) 2012 Joshua S Hou
 
 Distributed under the Eclipse Public License, the same as Clojure.
