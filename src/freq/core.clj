@@ -1,8 +1,9 @@
 (ns freq.core
-  (:gen-class))
+  (:gen-class)
+  (:require [clojure.string :as str]))
 
 (defn words [line]
-  (re-seq #"\w+" line))
+  (map str/lower-case (re-seq #"\w+" line)))
 
 (defn allwords [lines]
   (flatten (map words lines)))
