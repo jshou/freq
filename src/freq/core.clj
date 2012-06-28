@@ -16,5 +16,5 @@
       (fn [k1, k2] (<= (counts k2) (counts k1)))) counts)))
 
 (defn -main []
-  (println
-    (freq (java.io.BufferedReader. *in*))))
+  (doseq [keyval (freq (java.io.BufferedReader. *in*))]
+    (println (key keyval) (val keyval))))
